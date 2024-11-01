@@ -1,0 +1,175 @@
+{
+    "mælkevejen": [
+        {
+            "name": "Solen",
+            "diameter": "1391117 km",
+            "temperature": "5504°C",
+            "gravity": "28 gange jordens",
+            "mass": "332900 gange jordens",
+            "distance_from_earth": "149 millioner km",
+            "farve": "Gul",
+            "color": "yellow",
+            "order_from_sun": 0,
+            "type": "stjerne",
+            "orbital_period": "25 dage",
+            "day_length": "25 dage",
+            "fun_facts": [
+                "Solen udgør omkring 99,86% af massen i solsystemet og kunne rumme over en million jordkloder indeni.",
+                "Solen består hovedsageligt af brint (cirka 75%) og helium (cirka 24%), som konstant fusioneres og skaber enorme mængder energi.",
+                "Solen har en overfladetemperatur på cirka 5.500°C, men dens kerne når helt op til 15 millioner °C."
+            ]
+        },
+        {
+            "name": "Merkur",
+            "diameter": "4880 km",
+            "temperature": "167°C",
+            "gravity": "0,316 gange jordens",
+            "mass": "0,055 gang jordens",
+            "distance_from_earth": "77 millioner km",
+            "farve": "Grå",
+            "color": "grey",
+            "order_from_sun": 1,
+            "type": "klippeplaneter",
+            "orbital_period": "88 dage",
+            "day_length": "58 dage",
+            "fun_facts": [
+                "Den mindste planet i solsystemet.",
+                "Har ingen atmosfære, hvilket giver ekstreme temperatursvingninger mellem dag og nat.",
+                "Roterer meget langsomt og fuldfører en rotation hver 58. jorddag."
+            ]
+        },
+        {
+            "name": "Venus",
+            "diameter": "12104 km",
+            "temperature": "457°C",
+            "gravity": "0,903 gange jordens",
+            "mass": "0,814 gang jordens",
+            "distance_from_earth": "41 millioner km",
+            "farve": "Gullighvid",
+            "color": "Yellowish-white",
+            "order_from_sun": 2,
+            "type": "klippeplaneter",
+            "orbital_period": "225 dage",
+            "day_length": "243 dage",
+            "fun_facts": [
+                "Den varmeste planet i solsystemet på grund af en tyk atmosfære af kuldioxid.",
+                "Roterer baglæns (retrograd rotation), hvor solen står op i vest og går ned i øst.",
+                "En dag på Venus er længere end et år på Venus."
+            ]
+        },
+        {
+            "name": "Jorden",
+            "diameter": "12742 km",
+            "temperature": "-88/58°C",
+            "gravity": "0,98 Newton",
+            "mass": "5,9742*10^24 km3",
+            "distance_from_earth": "0 km",
+            "farve": "Blå og grøn",
+            "color": "Blue and green",
+            "order_from_sun": 3,
+            "type": "klippeplaneter",
+            "orbital_period": "365 dage",
+            "day_length": "24 timer",
+            "fun_facts": [
+                "Den eneste kendte planet med liv.",
+                "Har en unik atmosfære med 21% ilt, som understøtter forskellige livsformer.",
+                "Jordens hældning på aksen forårsager årstidsvariationer."
+            ]
+        },
+        {
+            "name": "Mars",
+            "diameter": "10870 km",
+            "temperature": "-87/-5°C",
+            "gravity": "0,38 gange jordens",
+            "mass": "0,107 gang jordens",
+            "distance_from_earth": "225 millioner km",
+            "farve": "Rød",
+            "color": "Red",
+            "order_from_sun": 4,
+            "type": "klippeplaneter",
+            "orbital_period": "687 dage",
+            "day_length": "24 timer 37 minutter", 
+            "fun_facts": [
+                "Kendt som 'Den Røde Planet' på grund af jernoxid på overfladen.",
+                "Har det højeste vulkan og største kløft i solsystemet.",
+                "Der er tegn på, at der engang var flydende vand på overfladen."
+            ]
+        },
+        {
+            "name": "Jupiter",
+            "diameter": "142984 km",
+            "temperature": "15/20°C",
+            "gravity": "375 gange jordens",
+            "mass": "318 gang jordens",
+            "distance_from_earth": "588 millioner km",
+            "farve": "Orange og hvide bånd",
+            "color": "Orange and white bands",
+            "order_from_sun": 5,
+            "type": "Gas Giant",
+            "orbital_period": "4380 dage",
+            "day_length": "9 timer 56 minutter",
+            "fun_facts": [
+                "Den største planet i solsystemet; over 1.300 jordkloder kunne passe ind i Jupiter.",
+                "Har en kæmpestorm kaldet Den Store Røde Plet, som har været aktiv i århundreder.",
+                "Har 79 kendte måner, inklusive de fire store galileiske måner."
+            ]
+        },
+        {
+            "name": "Saturn",
+            "diameter": "120536 km",
+            "temperature": "-139°C",
+            "gravity": "1,16 gange jordens",
+            "mass": "95 gang jordens",
+            "distance_from_earth": "1.2 billion km",
+            "farve": "Bleg guld",
+            "color": "Pale gold",
+            "order_from_sun": 6,
+            "type": "Gas Giant",
+            "orbital_period": "10950 dage",
+            "day_length": "10 timer 42 minutter",
+            "fun_facts": [
+                "Kendt for sit fantastiske ringsystem, som består af is og stenpartikler.",
+                "Har over 80 måner, hvor Titan er den største og den eneste måne med en tæt atmosfære.",
+                "Mindre tæt end vand; den ville flyde, hvis man kunne placere den i et stort vandlegeme."
+            ]
+        },
+        {
+            "name": "Uranus",
+            "diameter": "51118 km",
+            "temperature": "-197°C",
+            "gravity": "52 gange jordens",
+            "mass": "14,5 gang jordens",
+            "distance_from_earth": "2.6 billion km",
+            "farve": "Blågrøn",
+            "color": "Blue-green",
+            "order_from_sun": 7,
+            "type": "Ice Giant",
+            "orbital_period": "30660 dage",
+            "day_length": "17 timer 54 minutter",
+            "fun_facts": [
+                "Roterer på siden med en ekstrem akseltilt på 98 grader.",
+                "Den koldeste planet i solsystemet.",
+                "Har svage ringe og 27 kendte måner."
+            ]
+        },
+        {
+            "name": "Neptun",
+            "diameter": "55528 km",
+            "temperature": "-200°C",
+            "gravity": "1,2 gange jordens",
+            "mass": "17 gang jordens",
+            "distance_from_earth": "4.3 billion km",
+            "farve": "Blå",
+            "color": "Blue",
+            "order_from_sun": 8,
+            "type": "Ice Giant",
+            "orbital_period": "60190 dage",
+            "day_length": "19 timer 6 minutter",
+            "fun_facts": [
+                "Har de kraftigste vinde i solsystemet, der kan nå op på 2.100 km/t.",
+                "Ser blå ud på grund af metan i atmosfæren, der absorberer rødt lys.",
+                "Dens måne Triton har gejsere, som udspyr kvælstofgas."
+            ]
+        }
+    ]
+}

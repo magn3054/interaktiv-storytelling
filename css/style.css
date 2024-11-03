@@ -14,5 +14,42 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,
+            #001b33e3,
+            #001B33,
+            #051835,
+            #0B1638,
+            #11133A,
+            #171033,
+            #1C0D30,
+            #210A37,
+            #27073A,
+            #2B033C,
+            #2E003E,
+            #2e003ed3);
+}
+
+.circle {
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px #48abe0, 0 0 15px 4px #c6ebff, 0 0 25px 6px #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 5s infinite ease-in-out;
+    z-index: 1;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }

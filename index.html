@@ -7,12 +7,73 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/spinning_planets.css">
     <script defer src="js/stars.js"></script>
+    <script defer src="js/planet_select.js"></script>
 </head>
 
 <body>
     <main>
+        <!-- Carousel Container -->
+        <div class="carousel">
+            <div class="planet-container">
+                <!-- Planets as Divs or Images -->
+                <div class="planet" style="transform: rotateY(0deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="mercury"></div>
+                    </div>
+                </div>
 
+                <div class="planet" style="transform: rotateY(45deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="venus"></div>
+                    </div>
+                </div>
+
+                <div class="planet" style="transform: rotateY(90deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="earth"></div>
+                    </div>
+                </div>
+
+                <div class="planet" style="transform: rotateY(135deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="mars"></div>
+                    </div>
+                </div>
+
+                <div class="planet" style="transform: rotateY(180deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="jupiter"></div>
+                    </div>
+                </div>
+
+                <div class="planet" style="transform: rotateY(225deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="saturn"></div>
+                    </div>
+                </div>
+
+                <div class="planet" style="transform: rotateY(270deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="uranus"></div>
+                    </div>
+                </div>
+
+                <div class="planet" style="transform: rotateY(315deg) translateZ(200px);">
+                    <div class="earth">
+                        <div id="neptune"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls for navigation -->
+            <div class="controls">
+                <div class="control-btn" id="prev">‹</div>
+                <div class="control-btn" id="next">›</div>
+            </div>
+        </div>
     </main>
 </body>
 

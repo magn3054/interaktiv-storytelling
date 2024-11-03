@@ -1,8 +1,9 @@
 main {
-    /* width: 90vw;
-    min-height: 100vh; */
-    align-self: center;
-    justify-self: center;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
 }
 

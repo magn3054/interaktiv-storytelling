@@ -1,0 +1,122 @@
+/* Karussel af planeter */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    perspective: 250px;
+}
+
+.planet-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.planet {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s, opacity 0.5s;
+}
+
+
+/* knapperne */
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-btn {
+    background: #444;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.5em;
+}
+
+
+/* Snurrende planeter */
+.earth {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+}
+
+.earth:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+}
+
+.earth>div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+}
+
+#mercury {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b7fe5389-9714-4f1b-9101-ac2a97133816/dg6w6uy-d748676c-faec-4fdc-9e7e-c4df45694b46.jpg/v1/fill/w_1264,h_632,q_70,strp/mercury_texture_map_16k_by_askanery_dg6w6uy-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvYjdmZTUzODktOTcxNC00ZjFiLTkxMDEtYWMyYTk3MTMzODE2XC9kZzZ3NnV5LWQ3NDg2NzZjLWZhZWMtNGZkYy05ZTdlLWM0ZGY0NTY5NGI0Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.f68bCasnSuGAKaJG8bAV69JYRQT-JolAMr9WxWMmWk0);
+    background-size: cover;
+}
+#venus {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/7/72/Venus_map_NASA_JPL_Magellan-Venera-Pioneer.jpg);
+    background-size: cover;
+}
+#earth {
+    background: url(https://t4.ftcdn.net/jpg/03/28/89/61/360_F_328896165_i0TWGgJTtDWyIjKhYKcAUoA0rKiXYyx6.jpg);
+    background-size: cover;
+}
+#mars {
+    background: url(https://astrogeology.usgs.gov/ckan/dataset/dfdc2242-52dc-4126-bc89-03af8253ae79/resource/0d7b31dc-0b2e-4ca6-89dc-e3c1404c0232/download/mars_viking_clrmosaic_global_1024.jpg);
+    background-size: cover;
+}
+#jupiter {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/Jupiter_Cylindrical_Map_-_Dec_2000_PIA07782.jpg);
+    background-size: cover;
+}
+#saturn {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7117654f-5f91-4761-bde0-727b9abb0112/dhxx1cg-d2cf1d07-30ca-4489-969c-7b0085bf5cf6.png/v1/fill/w_1280,h_640,q_80,strp/saturn_texture_map__fictional__by_4stron4omi4_dhxx1cg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvNzExNzY1NGYtNWY5MS00NzYxLWJkZTAtNzI3YjlhYmIwMTEyXC9kaHh4MWNnLWQyY2YxZDA3LTMwY2EtNDQ4OS05NjljLTdiMDA4NWJmNWNmNi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KnaC2ll621KnC6-PhcqvKhw-4Q4GH63qEXtBl2NAdo8);
+    background-size: cover;
+}
+#uranus {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/efbcbef1-b203-4367-9335-2720d26f49ec/dfhdds9-c3e2e491-0f51-4567-9afd-8034b7c7405a.png/v1/fill/w_1024,h_512,q_80,strp/don_davis_uranus_map_4k__fictional__by_mrspace43_celestia_dfhdds9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvZWZiY2JlZjEtYjIwMy00MzY3LTkzMzUtMjcyMGQyNmY0OWVjXC9kZmhkZHM5LWMzZTJlNDkxLTBmNTEtNDU2Ny05YWZkLTgwMzRiN2M3NDA1YS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eXEy-5tHxfeIoPsDJajGPhEnTzoI4oankBAO8rMDQ8o);
+    background-size: cover;
+}
+#neptune {
+    background: url(https://www.solarsystemscope.com/textures/download/2k_neptune.jpg);
+    background-size: cover;
+}
+
+/* https://www.solarsystemscope.com/textures/ */
+
+@keyframes spin {
+    to {
+        transform: translateX(-50%);
+    }
+}

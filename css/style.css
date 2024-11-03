@@ -39,7 +39,7 @@ body {
     border-radius: 50%;
     opacity: 0;
     animation: twinkle 5s infinite ease-in-out;
-    z-index: 1;
+    z-index: -1;
 }
 
 @keyframes twinkle {

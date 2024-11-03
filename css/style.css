@@ -12,3 +12,7 @@
     --black: #00010D;
     --white: #fff;
 }
+
+body {
+    overflow: hidden;
+}

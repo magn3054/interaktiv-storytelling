@@ -1,3 +1,5 @@
+"use strict;"
+
 const body = document.querySelector('body');
 const circleCount = 100; // antal stjerner
 

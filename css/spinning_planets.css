@@ -1,3 +1,12 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
 /* Karussel af planeter */
 .carousel {
     position: relative;
@@ -57,17 +66,13 @@
 }
 
 .planet-image {
+    position: absolute;
     width: 200%;
     height: 100%;
     transform: rotateY(0deg);
     backface-visibility: hidden;
     animation: spin 30s linear alternate infinite;
 }
-
-/* .earth>div {
-    width: 200%;
-    height: 100%;
-} */
 
 #mercury {
     background: url(https://www.solarsystemscope.com/textures/download/2k_mercury.jpg);
@@ -81,13 +86,11 @@
     /* background: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg); */
     background: url(/img/earth_map.png);
     background-size: cover;
-    position: absolute;
 }
 #clouds {
     /* background: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg); */
     background: url(/img/earth_clouds.png);
     background-size: cover;
-    position: absolute;
     animation: spin 60s linear alternate-reverse infinite;
 }
 #mars {

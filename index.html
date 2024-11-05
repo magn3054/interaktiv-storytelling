@@ -7,73 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/spinning_planets.css">
     <script defer src="js/stars.js"></script>
     <script defer src="js/planet_select.js"></script>
 </head>
 
 <body>
     <main>
-        <!-- Carousel Container -->
-        <div class="carousel">
-            <div class="planet-container">
-                <div class="planet" style="transform: rotateY(0deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="mercury"></div>
-                    </div>
-                </div>
+        <section id="milkyway">
+            <img id="sun" src="img/sun.svg" alt="Solen">
+            <img class="planet-image" id="mercury" src="img/mercury.svg" alt="Merkur">
+            <img class="planet-image" id="venus" src="img/venus.svg" alt="Venus">
+            <img class="planet-image" id="earth" src="img/earth.svg" alt="Jorden">
+            <img class="planet-image" id="mars" src="img/mars.svg" alt="Mars">
+            <img class="planet-image" id="jupiter" src="img/jupiter.svg" alt="Jupiter">
+            <img class="planet-image" id="saturn" src="img/saturn.svg" alt="Saturn">
+            <img class="planet-image" id="uranus" src="img/uranus.svg" alt="Uranus">
+            <img class="planet-image" id="neptune" src="img/neptune.svg" alt="Neptun">
+        </section>
 
-                <div class="planet" style="transform: rotateY(45deg) translateZ(200px)">
-                    <div class="earth">
-                        <div class="planet-image" id="venus"></div>
-                    </div>
-                </div>
-
-                <div class="planet" style="transform: rotateY(90deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="earth"></div>
-                        <div class="planet-image" id="clouds"></div>
-                    </div>
-                </div>
-
-                <div class="planet" style="transform: rotateY(135deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="mars"></div>
-                    </div>
-                </div>
-
-                <div class="planet" style="transform: rotateY(180deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="jupiter"></div>
-                    </div>
-                </div>
-
-                <div class="planet" style="transform: rotateY(225deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="saturn"></div>
-                    </div>
-                </div>
-
-                <div class="planet" style="transform: rotateY(270deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="uranus"></div>
-                    </div>
-                </div>
-
-                <div class="planet" style="transform: rotateY(315deg) translateZ(200px);">
-                    <div class="earth">
-                        <div class="planet-image" id="neptune"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Pile til navigering -->
-            <div class="controls">
-                <div class="control-btn" id="prev">‹</div>
-                <div class="control-btn" id="next">›</div>
-            </div>
-        </div>
     </main>
 </body>
 

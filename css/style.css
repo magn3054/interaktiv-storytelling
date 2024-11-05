@@ -13,6 +13,10 @@
     --white: #fff;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
     /* overflow: hidden; */
     min-width: 100vw;

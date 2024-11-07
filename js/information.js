@@ -6,11 +6,11 @@ function info(planet) {
     const infoscreen = document.getElementById("infoscreen");
     const milkyway = document.getElementById("milkyway");
     
-    // Opretter et nyt videoelement til at vise en film om planeten
+    // Opretter et nyt videoelement til at vise en film om planeten 
     const movieElement = document.createElement("video");
     movieElement.id = "rocket-clip";
     movieElement.controls = false;
-    movieElement.src = './video/flyvende-rumskib.mp4';
+    movieElement.src = './img/flyvende-rumskib.mp4';
     document.querySelector("body").appendChild(movieElement);
     movieElement.autoplay = true;
     movieElement.onended = function() { // Skal være en callback funktion for ikke at stoppe videoen med det samme
@@ -18,8 +18,10 @@ function info(planet) {
     };
 
     // Skifter visningen, så informationsskærmen vises og Milky Way forsvinder
-    infoscreen.style.display = "grid";
-    milkyway.style.display = "none";
+    setTimeout(() => {
+        infoscreen.style.display = "grid";
+        milkyway.style.display = "none";
+    }, 2000);
 
     fetch('./json/planet_facts.json')
         .then(response => response.json())
@@ -50,22 +52,22 @@ function displayPlanetInfo(data, planetName) {
 
     // Indsætter alle fakta for planeten i HTML
     facta.innerHTML = `
-    <ul>
-        <li>Diameter: ${data.diameter}</li>
-        <li>Temperature: ${data.temperature}</li>
-        <li>Gravity: ${data.gravity}</li>
-        <li>Mass: ${data.mass}</li>
-        <li>Distance from Earth: ${data.distance_from_earth}</li>
-        <li>Color: ${data.color}</li>
-        <li>Order from Sun: ${data.order_from_sun}</li>
-        <li>Type: ${data.type}</li>
-        <li>Orbital Period: ${data.orbital_period}</li>
-        <li>Day Length: ${data.day_length}</li>
-        <li>Fun Facts:</li>
         <ul>
-        ${data.fun_facts.map(fact => `<li>${fact}</li>`).join('')}
+            <li>Diameter: ${data.diameter}</li>
+            <li>Temperature: ${data.temperature}</li>
+            <li>Gravity: ${data.gravity}</li>
+            <li>Mass: ${data.mass}</li>
+            <li>Distance from Earth: ${data.distance_from_earth}</li>
+            <li>Color: ${data.color}</li>
+            <li>Order from Sun: ${data.order_from_sun}</li>
+            <li>Type: ${data.type}</li>
+            <li>Orbital Period: ${data.orbital_period}</li>
+            <li>Day Length: ${data.day_length}</li>
+            <li>Fun Facts:</li>
+            <ul>
+            ${data.fun_facts.map(fact => `<li>${fact}</li>`).join('')}
+            </ul>
         </ul>
-    </ul>
     `;
 }
 

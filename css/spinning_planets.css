@@ -83,12 +83,10 @@ main {
     background-size: cover;
 }
 #earth {
-    /* background: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg); */
     background: url(/img/earth_map.png);
     background-size: cover;
 }
 #clouds {
-    /* background: url(https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg); */
     background: url(/img/earth_clouds.png);
     background-size: cover;
     animation: spin 60s linear alternate-reverse infinite;

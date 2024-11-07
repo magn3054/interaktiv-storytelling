@@ -1,0 +1,99 @@
+"use strict";
+
+function info(planet) {
+    const infoscreen = document.getElementById("infoscreen");
+    const milkyway = document.getElementById("milkyway");
+    
+    // Opretter et nyt videoelement til at vise en film om planeten
+    const movieElement = document.createElement("video");
+    movieElement.id = "rocket-clip";
+    movieElement.controls = false;
+    movieElement.src = './img/rocket-fire.mov';
+    document.querySelector("body").appendChild(movieElement);
+    movieElement.autoplay = true;
+    movieElement.onended = function() { // Skal være en callback funktion for ikke at stoppe videoen med det samme
+        movieElement.remove();
+    };
+
+    // Skifter visningen, så informationsskærmen vises og Milky Way forsvinder
+    infoscreen.style.display = "grid";
+    milkyway.style.display = "none";
+
+    fetch('./json/planet_facts.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            // Viser oplysningerne for den valgte planet
+            displayPlanetInfo(jsonData[planet], planet);
+            selectedPlanet = planet;
+        });
+}
+
+function displayPlanetInfo(data, planetName) {
+    // Udfylder div'en med data for den valgte planet
+    let planetImage = document.querySelector(".planet-image");
+    planetImage.id = planetName;
+
+    // Hvis planeten er Jorden, tilføjes et ekstra lag for skyer
+    if (planetName === "jorden") {
+        const cloudsDiv = document.createElement("div");
+        cloudsDiv.className = "planet-image";
+        cloudsDiv.id = "clouds";
+        document.querySelector(".turning-planet").appendChild(cloudsDiv);
+    }
+
+    const planetTitle = document.getElementById("planet-title");
+    planetTitle.innerHTML = planetName;
+
+    const facta = document.getElementById("planet-facts");
+
+    // Indsætter alle fakta for planeten i HTML
+    facta.innerHTML = `
+    <ul>
+        <li>Diameter: ${data.diameter}</li>
+        <li>Temperature: ${data.temperature}</li>
+        <li>Gravity: ${data.gravity}</li>
+        <li>Mass: ${data.mass}</li>
+        <li>Distance from Earth: ${data.distance_from_earth}</li>
+        <li>Color: ${data.color}</li>
+        <li>Order from Sun: ${data.order_from_sun}</li>
+        <li>Type: ${data.type}</li>
+        <li>Orbital Period: ${data.orbital_period}</li>
+        <li>Day Length: ${data.day_length}</li>
+        <li>Fun Facts:</li>
+        <ul>
+        ${data.fun_facts.map(fact => `<li>${fact}</li>`).join('')}
+        </ul>
+    </ul>
+    `;
+}
+
+function crossAway() {
+    const infoscreenAway = document.getElementById("infoscreen");
+    const milkyAway = document.getElementById("milkyway");
+    const factaAway = document.getElementById("planet-facts");
+    const planetNameAway = document.getElementById("planet-title");
+    const taleBobleAway = document.querySelector(".speech-bubble");
+    const tekstBobleAway = document.getElementById("speech");
+
+    // Skjuler informationsskærmen og genskaber Milky Way visningen
+    infoscreenAway.style.display = "none";
+    milkyAway.style.display = "flex";
+    planetNameAway.innerHTML = "";
+    factaAway.innerHTML = "";
+
+    // Fjerner eventuelle skyer, der blev tilføjet for Jorden
+    if (document.getElementById("clouds")) {
+        const cloudsDivAway = document.getElementById("clouds");
+        cloudsDivAway.remove();
+    }
+
+    // Skjuler taleboblen og rydder tekstboblen
+    taleBobleAway.style.display = "none"; 
+    tekstBobleAway.innerHTML = "";
+
+    // Nulstiller den valgte planet og stopper for animation og lyd
+    selectedPlanet = "";
+    audio.pause();
+    audio.currentTime = 0;
+    mund.src = "/img/talking-still.png";
+}

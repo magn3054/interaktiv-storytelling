@@ -25,6 +25,6 @@ video.style.display = "block";
 video.play();
 
 video.onended = function(){
-  window.location.href = "index.html"; // Der tilføjes en eventlistener, som gør at den skifter til side, når videon er færdig
+  window.location.href = "solsystem.html"; // Der tilføjes en eventlistener, som gør at den skifter til side, når videon er færdig
 };
 }

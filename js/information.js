@@ -10,7 +10,7 @@ function info(planet) {
     const movieElement = document.createElement("video");
     movieElement.id = "rocket-clip";
     movieElement.controls = false;
-    movieElement.src = './img/flyvende-rumskib.mp4';
+    movieElement.src = './img/flying-spaceship.mp4';
     document.querySelector("body").appendChild(movieElement);
     movieElement.autoplay = true;
     movieElement.onended = function() { // Skal være en callback funktion for ikke at stoppe videoen med det samme

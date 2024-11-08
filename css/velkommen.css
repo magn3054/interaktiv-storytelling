@@ -4,15 +4,39 @@
   box-sizing: border-box;
 }
 
-body{
-display: flex;
-align-items: center;
-}
+.velkommen-vink {
 
-#astra{
-height: 10vh;
-}
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
 
-#spaceship{
-  height: 20vh;
 }
+.velkommen-vink img{
+  height: 100vh;
+}
+  .baggrund {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+
+  #velkommen-tale .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  #spaceship {
+    height: 42vh;
+    margin-left: 10vw;
+    margin-top: 30vh;
+  }
+  
+  #info-astra {
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 40%;
+  }

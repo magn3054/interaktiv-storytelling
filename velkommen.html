@@ -5,10 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Velkommen</title>
   <link rel="stylesheet" href="css/velkommen.css">
- 
+  <script src="js/velkommen.js" defer></script>
 </head>
 <body>
-  <img id="astra" src="/img/astra-talking.gif" alt="Astra snakker">
-  <img id="spaceship" src="/img/Spaceship Image.png" alt="Rumskib">
+  <div class="velkommen-vink">
+    <img src="img/waving-gif.gif" alt="Waving" onclick="handleClick()" >
+  </div>
+  <img class="baggrund" src="img/mark.jpg" alt="mark baggrund" >
+<div id="velkommen-tale" style="display: none;">
+  <div class="container">
+    <section>
+      <img id="spaceship" src="img/Spaceship.png" alt="Rumskib">
+    </section>
+    <section>
+      <img id="info-astra" src="img/talking-still.png" alt="Astra, som venter på at tale">
+    </section>
+  </div>
+</div>
 </body>
 </html>

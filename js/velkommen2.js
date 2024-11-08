@@ -10,12 +10,22 @@ function handleClick() {
 
   audio.src = "/audio/velkommen.mp3"; // afspiller lyden fra velkommen.mp3
   audio.play();
-  audio.onended = ()=> {
+  audio.onended = () => {
     document.getElementById('astra-standby').style.display = 'flex';
     document.getElementById('astra-talking').style.display = 'none';
     document.getElementById('astra-standby').style.display = 'none';
     document.getElementById('spaceship').src = 'img/full-spaceship.png';
     document.getElementById('spaceship').style.animation = 'takeoff 2s ease-in-out forwards';
+    
+    setTimeout(() => {
+      const sceneChange = document.getElementById('scene-change');
+      sceneChange.style.display = 'flex';
+      sceneChange.controls = false;
+      sceneChange.play();
+      sceneChange.onended = () => {
+        window.location.href = 'solsystem.html';
+      };
+    }, 2000);
   };
 }
 

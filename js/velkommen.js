@@ -1,7 +1,5 @@
 "use strict;"
 
-
-
 const audio = new Audio();
 const mund = document.getElementById("info-astra");
 

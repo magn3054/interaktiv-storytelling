@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 function info(planet) {
     const infoscreen = document.getElementById("infoscreen");
     const milkyway = document.getElementById("milkyway");
@@ -13,7 +11,7 @@ function info(planet) {
     movieElement.src = './img/flying-spaceship.mp4';
     document.querySelector("body").appendChild(movieElement);
     movieElement.autoplay = true;
-    movieElement.onended = function() { // Skal være en callback funktion for ikke at stoppe videoen med det samme
+    movieElement.onended = () => { // Skal være en callback funktion for ikke at stoppe videoen med det samme
         movieElement.remove();
     };
 

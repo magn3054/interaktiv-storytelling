@@ -1,75 +1,31 @@
 <!DOCTYPE html>
 <html lang="da">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/solsystem.css">
-    <link rel="stylesheet" href="css/infoscreen.css">
-    <script defer src="js/stars.js"></script>
-    <script defer src="js/preloader.js"></script>
-    <script defer src="js/information.js"></script>
-    <script defer src="js/voices.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velkommen</title>
+  <link rel="stylesheet" href="css/velkommen.css">
+  <script src="js/velkommen.js" defer></script>
 </head>
-
 <body>
-    <main>
-        <section id="milkyway">
-            <img id="sun" src="img/sun_half.svg" alt="Solen">
-            <div class="planets">
-                <div id="bounding-mercury" class="bounding-planet" onclick="info('merkur')">
-                    <img class="planet-img" id="c-mercury" src="img/mercury.svg" alt="Merkur">
-                </div>
-                <div id="bounding-venus" class="bounding-planet" onclick="info('venus')">
-                    <img class="planet-img" id="c-venus" src="img/venus.svg" alt="Venus">
-                </div>
-                <div id="bounding-earth" class="bounding-planet" onclick="info('jorden')">
-                    <img class="planet-img" id="c-earth" src="img/earth.svg" alt="Jorden">
-                </div>
-                <div id="bounding-mars" class="bounding-planet" onclick="info('mars')">
-                    <img class="planet-img" id="c-mars" src="img/mars.svg" alt="Mars">
-                </div>
-                <div id="bounding-jupiter" class="bounding-planet" onclick="info('jupiter')">
-                    <img class="planet-img" id="c-jupiter" src="img/jupiter.svg" alt="Jupiter">
-                </div>
-                <div id="bounding-saturn" class="bounding-planet" onclick="info('saturn')">
-                    <img class="planet-img" id="c-saturn" src="img/saturn.svg" alt="Saturn">
-                </div>
-                <div id="bounding-uranus" class="bounding-planet" onclick="info('uranus')">
-                    <img class="planet-img" id="c-uranus" src="img/uranus.svg" alt="Uranus">
-                </div>
-                <div id="bounding-neptune" class="bounding-planet" onclick="info('neptun')">
-                    <img class="planet-img" id="c-neptune" src="img/neptune.svg" alt="Neptun">
-                </div>
-            </div>
-        </section>
-        <section id="infoscreen">
-            <img id="close" src="img/cross.svg" onclick="crossAway()" alt="Kryds">
-            <div class="turning-planet">
-                <div class="planet-image"></div>
-            </div>
-            <h1 id="planet-title"></h1>
-            <section id="morph">
-                <section class="planet-facts-box">
-                    <article id="planet-facts">
-                    </article>
-                </section>
-                <section class="planet-text-box">
-                    <article id="planet-text"></article>
-                </section>
-            </section>
-            <section class="speech-bubble">
-                <article id="speech">
-                    
-                </article>
-            </section>
-            <img id="info-astra" src="img/talking-still.png" onclick="tal()" alt="Astra, som venter på at tale">
-        </section>
-    </main>
+  <div class="velkommen-vink">
+    <img src="img/waving-gif.gif" alt="Waving" onclick="handleClick()" >
+  </div>
+  <img class="baggrund" src="img/mark.jpg" alt="mark baggrund" >
+<div id="velkommen-tale" style="display: none;">
+  <div class="container">
+    <section>
+      <img id="spaceship" src="img/Spaceship.png" alt="Rumskib" onclick="showVideo()">
+    </section>
+    <section>
+      <img id="info-astra" src="img/talking-still.png" alt="Astra, som venter på at tale">
+    </section>
+  </div>
+</div>
+
+<!--Kodning af video af rumskibet der flyver fra jorden -->
+
+<video id="takingOff" autoplay style ="display: none;"> <source src="img/spaceship-taking-off.mp4" type="video/mp4"> </video>
+
 </body>
-
 </html>
-
-<!-- https://www.youtube.com/watch?v=vqXLGX0szIQ -->

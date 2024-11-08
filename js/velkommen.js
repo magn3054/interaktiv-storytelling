@@ -14,3 +14,15 @@ function handleClick() {
   };
 }
 
+// kodning af video der flyver fra jorden
+
+function showVideo(){
+document.getElementById('velkommen-tale').style.display = 'none'; // Skjuler velkomst indholdet  
+const video = document.getElementById ('takingOff'); //henter id'en fra videon og gøre den synlig
+video.style.display = "block";
+video.play();
+
+video.onended = function(){
+  window.location.href = "solsystem.html"; // Der tilføjes en eventlistener, som gør at den skifter til side, når videon er færdig
+};
+}

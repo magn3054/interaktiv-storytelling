@@ -1,3 +1,25 @@
+/* Importer skrifttyperne fra fonte-mappen */
+@font-face {
+    font-family: "Kiddie Land";
+    src: url("./fonte/KiddieLand.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("./fonte/Futura.ttf") format("truetype");
+}
+
+/* Anvend "Kiddie Land" på overskrifter */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Kiddie Land", cursive;
+}
+
+/* Anvend "Futura" på brødtekst */
+body, p, span, li, div {
+    font-family: "Futura", sans-serif;
+}
+
+
 #rocket-clip {
     position: absolute;
     top: 0;

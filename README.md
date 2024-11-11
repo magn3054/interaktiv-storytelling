@@ -12,9 +12,11 @@ Find hende [her](https://storytelling.mdamsgaard.dk/)
 ![Planeterne i rummet](img/json-output.png)
 
 Med javascript henter vi vores JSON data ind i koden. Når en planet bliver valgt, gemmes den i parameteren **'planet'**.  
-https://github.com/magn3054/interaktiv-storytelling/blob/61b737deae1e86942193fed100478423796bd298/js/information.js#L24-L31
-```Javascript
 
+
+<pre><b>js/information.js</b> | Linje: 3-31 | <i>Koden er forkortet af hensyn til enkelthed</i> </</pre>
+
+```Javascript
 function info(planet) {
   fetch('./json/planet_facts.json')
     .then(response => response.json())
@@ -24,9 +26,11 @@ function info(planet) {
     });
 }
 ```
+</pre>
 
-**'planet'** bliver brugt til at at specificere **objekt KEY**'en i JSON filen 
+**'planet'** bliver brugt til at at specificere <span style="color: #68cdfe">objekt KEY'en</span> i JSON filen 
 
+<pre><b>json/planet_facts.json</b> | Linje: 72-99 </</pre>
 ```JSON
 "jorden": {
   "name": "Jorden",
@@ -57,15 +61,16 @@ function info(planet) {
     "audio_duration" : 12
   },
 ```
+</pre>
 
-**Objekt KEY**'en i dette tilfælde er jorden. Herunder har vi faktaerne omkring planeten, som bliver lagt ind på "planet-siden". 
+<span style="color: #68cdfe">Objekt KEY'en</span> i dette tilfælde er jorden. Under den har vi faktaerne omkring planeten, som bliver lagt ind på "planet-siden". 
 
 ![Fakta omkring jorden](img/json-fakta.png)
 
-På billedet over ses hvordan JSON dataen bliver plottet ind rådt. 
+På billedet ovenover ses, hvordan JSON dataen ser ud når den bliver implementeret raw med følgende javascript kode. 
 
+<pre><b>js/information.js</b> | linje: 33-70 | <i>Koden er forkortet af hensyn til enkelthed</i> </</pre>
 ```javascript
-// Koden er forkortet af hensyn til enkelthed
 function displayPlanetInfo(data, planetName) {
   facta.innerHTML = `
     <ul>
@@ -87,6 +92,35 @@ function displayPlanetInfo(data, planetName) {
   `;
 }
 ```
+</pre>
+
+I hvert <span style="color: #68cdfe"> objekt KEY</span> findes to <span style="color: #68cdfe">array KEYs</span>; **'fun_fact'** og **'short_facts'**. <br>
+Array'et **'short_facts'** bruges sammen med **'audio_duration'** til at beregne hvor lang tid, hvert item skal vises i taleboblen.
+
+<pre><b>js/voices.js</b> | linje: 13-44 | <i>Koden er forkortet af hensyn til enkelthed</i> </</pre>
+```javascript
+let undertekster = jsonData[selectedPlanet].short_facts;
+let audioDuration = jsonData[selectedPlanet].audio_duration;
+
+function displayFacts(index) {
+    if (index < undertekster.length) {
+
+        taleBoble.innerHTML = `<p>${undertekster[index]}</p>`;
+        const wordCount = undertekster[index].split(" ").length;
+        const displayTimePerWord = 350;
+        const totalDisplayTime = audioDuration * 1000;
+        const timeForCurrentFact = (wordCount * displayTimePerWord / totalDisplayTime) * totalDisplayTime;
+
+        setTimeout(() => {
+            mund.src = "/img/talking-still.png";
+            taleBoble.innerHTML = "";
+
+            displayFacts(index + 1);
+        }, timeForCurrentFact);
+    }
+}
+```
+</pre>
 
 
 <!-- keys bliver brugt til forskellige ting 

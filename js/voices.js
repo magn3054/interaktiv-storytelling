@@ -26,7 +26,7 @@ function tal() {
                     taleBoble.innerHTML = `<p>${undertekster[index]}</p>`;
 
                     const wordCount = undertekster[index].split(" ").length;
-                    const displayTimePerWord = 350; // 350 ms pr. ord (valgfri længde)
+                    const displayTimePerWord = 350; // 350 ms pr. ord
                     const totalDisplayTime = audioDuration * 1000;
 
                     // Beregner tiden for den nuværende fakta ud fra antal ord og overordnet tid på lydfilen

@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velkommen</title>
-  <link rel="stylesheet" href="css/velkommen.css">
-  <script src="js/velkommen.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velkommen</title>
+    <link rel="icon" href="img/earth.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/velkommen2.css">
+    <script src="js/velkommen2.js" defer></script>
 </head>
+
 <body>
-  <div class="velkommen-vink">
-    <img src="img/waving-gif.gif" alt="Waving" onclick="handleClick()" >
-  </div>
-  <img class="baggrund" src="img/mark.jpg" alt="mark baggrund" >
-<div id="velkommen-tale" style="display: none;">
-  <div class="container">
-    <section>
-      <img id="spaceship" src="img/Spaceship.png" alt="Rumskib" onclick="showVideo()">
-    </section>
-    <section>
-      <img id="info-astra" src="img/talking-still.png" alt="Astra, som venter på at tale">
-    </section>
-  </div>
-</div>
-
-<!--Kodning af video af rumskibet der flyver fra jorden -->
-
-<video id="takingOff" autoplay style ="display: none;"> <source src="img/spaceship-taking-off.mp4" type="video/mp4"> </video>
-
+    <img id="baggrund" src="img/background-hello.png" alt="" id="Baggrund">
+    <img id="astra-standby" src="img/waving-gif.gif" onclick="handleClick()" alt="Astra vinker">
+    <img id="astra-talking" src="img/talking-gif.gif" alt="Astra taler">
+    <img id="spaceship" src="img/empty-spaceship.png" alt="">
+    <img id="forgrund" src="img/foreground-hello.png" alt="Forgrund">
+    <video src="img/spaceship-taking-off.mp4" id="scene-change"></video>
 </body>
+
 </html>

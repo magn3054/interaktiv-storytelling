@@ -5,20 +5,23 @@
 
 # Interaktiv-storytelling - Kom med Astra i rummet
 
+Find hende [her](https://storytelling.mdamsgaard.dk/)
+
 ## Sådan har vi brugt JSON
 
 ![Planeterne i rummet](img/json-output.png)
 
 Med javascript henter vi vores JSON data ind i koden. Når en planet bliver valgt, gemmes den i parameteren **'planet'**.  
-
+https://github.com/magn3054/interaktiv-storytelling/blob/main/js/information.js#L1-L6
 ```Javascript
+
 function info(planet) {
-    fetch('./json/planet_facts.json')
-        .then(response => response.json())
-        .then(jsonData => {
-            displayPlanetInfo(jsonData[planet], planet);
-            selectedPlanet = planet;
-        });
+  fetch('./json/planet_facts.json')
+    .then(response => response.json())
+    .then(jsonData => {
+      displayPlanetInfo(jsonData[planet], planet);
+        selectedPlanet = planet;
+    });
 }
 ```
 
@@ -26,7 +29,7 @@ function info(planet) {
 
 ```JSON
 "jorden": {
-    "name": "Jorden",
+  "name": "Jorden",
     "diameter": "12742 km",
     "temperature": "-88/58°C",
     "gravity": "0,98 Newton",
@@ -55,7 +58,36 @@ function info(planet) {
   },
 ```
 
-**objekt KEY**'en i dette tilfælde er jorden. Dens
+**Objekt KEY**'en i dette tilfælde er jorden. Herunder har vi faktaerne omkring planeten, som bliver lagt ind på "planet-siden". 
+
+![Fakta omkring jorden](img/json-fakta.png)
+
+På billedet over ses hvordan JSON dataen bliver plottet ind rådt. 
+
+```javascript
+// Koden er forkortet af hensyn til enkelthed
+function displayPlanetInfo(data, planetName) {
+  facta.innerHTML = `
+    <ul>
+      <li>Diameter: ${data.diameter}</li>
+      <li>Temperature: ${data.temperature}</li>
+      <li>Gravity: ${data.gravity}</li>
+      <li>Mass: ${data.mass}</li>
+      <li>Distance from Earth: ${data.distance_from_earth}</li>
+      <li>Color: ${data.color}</li>
+      <li>Order from Sun: ${data.order_from_sun}</li>
+      <li>Type: ${data.type}</li>
+      <li>Orbital Period: ${data.orbital_period}</li>
+      <li>Day Length: ${data.day_length}</li>
+      <li>Fun Facts:</li>
+      <ul>
+      ${data.fun_facts.map(fact => `<li>${fact}</li>`).join('')}
+      </ul>
+    </ul>
+  `;
+}
+```
+
 
 <!-- keys bliver brugt til forskellige ting 
 img bliver brugt

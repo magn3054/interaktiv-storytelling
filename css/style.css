@@ -2,16 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: gray;
-}
-
-:root{
-    --main: #2D0140;
-    --light: #660273;
-    --lighter: #A305A6;
-    --dark: #010326;
-    --black: #00010D;
-    --white: #fff;
+    color: #dcdcdc;
 }
 
 html {

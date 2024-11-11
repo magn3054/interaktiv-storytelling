@@ -25,7 +25,6 @@
 }
 
 #spaceship {
-    cursor: pointer;
     display: flex;
     position: absolute;
     left: 7%;

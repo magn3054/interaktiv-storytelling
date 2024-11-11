@@ -12,7 +12,7 @@ Find hende [her](https://storytelling.mdamsgaard.dk/)
 ![Planeterne i rummet](img/json-output.png)
 
 Med javascript henter vi vores JSON data ind i koden. Når en planet bliver valgt, gemmes den i parameteren **'planet'**.  
-https://github.com/magn3054/interaktiv-storytelling/blob/main/js/information.js#L1-L6
+https://github.com/magn3054/interaktiv-storytelling/blob/61b737deae1e86942193fed100478423796bd298/js/information.js#L33-L70
 ```Javascript
 
 function info(planet) {

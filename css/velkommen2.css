@@ -10,18 +10,18 @@
     cursor: pointer;
     display: flex;
     position: absolute;
-    height: 90dvh;
+    height: 75dvh;
     right: 20%;
-    bottom: 8%;
+    bottom: 10%;
 }
 
 #astra-talking {
     cursor: pointer;
     display: none;
     position: absolute;
-    height: 67dvh;
-    right: 23.5%;
-    bottom: 16.5%;
+    height: 75dvh;
+    right: 21.1%;
+    bottom: 10%;
 }
 
 #spaceship {

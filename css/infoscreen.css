@@ -226,8 +226,11 @@
 
 .btn {
     grid-area: 1 / 5 / 4 / 5;
-    align-self: center;
-    justify-self: center;
+    /* align-self: center;
+    justify-self: center; */
+
+    margin-left: 32%;
+    margin-top: 75%;
     position: absolute;
     padding: 4px 10px;
     border: 2px solid red;
@@ -238,3 +241,4 @@
     font-weight: 400;
     animation: planet-hover 6s infinite ease-in-out;
 }
+

@@ -15,12 +15,14 @@ function tal() {
 
             const taleBoble = document.getElementById("speech");
             const speechBubble = document.querySelector(".speech-bubble");
+            const speechButton = document.querySelector(".btn");
 
             // Funktion til at vise hver fakta én ad gangen
             function displayFacts(index) {
                 if (index < undertekster.length) {
 
                     mund.src = "/img/talking-gif.gif"; // Skifter til gif af Astra der taler
+                    speechButton.style.display = "none" 
 
                     // Vis den passende fakta fra rækken
                     taleBoble.innerHTML = `<p>${undertekster[index]}</p>`;
@@ -45,6 +47,7 @@ function tal() {
                 } else {
                     // Skjuler taleboblen efter den sidste fakta
                     speechBubble.style.display = "none";
+                    speechButton.style.display = "flex"    
                 }
             }
 

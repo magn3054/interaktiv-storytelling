@@ -163,6 +163,8 @@
     align-items: center;
     justify-content: center;
     
+
+    
     &:before,
     &:after {
         content: ' ';
@@ -198,7 +200,8 @@
         padding: 0 1rem;
         text-align: center;
         text-wrap: wrap;
-        font-size: 200%;
+        font-size: 100%;
+    
     }
 }
 

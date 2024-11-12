@@ -28,6 +28,17 @@ function info(planet) {
             displayPlanetInfo(jsonData[planet], planet);
             selectedPlanet = planet;
         });
+
+    // Hent beskrivelsen for planeten fra 'planet_text.json'
+    fetch('./json/planet_text.json')
+        .then(response => response.json())
+        .then(jsonData => {
+    const planetData = jsonData["planet-text"].find(item => item.navn.toLowerCase() === planet.toLowerCase());
+    if (planetData) {
+        displayPlanetText(planetData.beskrivelse);
+    }
+});
+
 }
 
 function displayPlanetInfo(data, planetName) {
@@ -67,6 +78,13 @@ function displayPlanetInfo(data, planetName) {
             </ul>
         </ul>
     `;
+
+function displayPlanetText(beskrivelse) {
+        
+    const planetTextElement = document.getElementById("planet-text");
+        planetTextElement.innerHTML = `<p>${beskrivelse}</p>`;
+    }
+    
 }
 
 function crossAway() {
@@ -74,6 +92,7 @@ function crossAway() {
     const milkyAway = document.getElementById("milkyway");
     const factaAway = document.getElementById("planet-facts");
     const planetNameAway = document.getElementById("planet-title");
+    const textAway = document.getElementById("planet-text")
     const taleBobleAway = document.querySelector(".speech-bubble");
     const tekstBobleAway = document.getElementById("speech");
 
@@ -82,6 +101,7 @@ function crossAway() {
     milkyAway.style.display = "flex";
     planetNameAway.innerHTML = "";
     factaAway.innerHTML = "";
+    textAway.innerHTML = "";
 
     // Fjerner eventuelle skyer, der blev tilføjet for Jorden
     if (document.getElementById("clouds")) {

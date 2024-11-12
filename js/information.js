@@ -82,7 +82,7 @@ function displayPlanetInfo(data, planetName) {
     const breadText = document.getElementById("planet-text");
 
     // Indsætter alle fakta for planeten i HTML
-    breadText.innerHTML = `
+    breadText.innerHTML = ``;
 
 }
 

@@ -237,4 +237,5 @@
     font-size: 1.2rem;
     font-weight: 400;
     animation: planet-hover 6s infinite ease-in-out;
+    pointer-events: none;
 }

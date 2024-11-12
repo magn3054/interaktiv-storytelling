@@ -212,7 +212,7 @@
       "Her kan temperaturen falde til næsten minus 200 grader."  
     ],
     "audio_duration" : 9,
-    "breadtext": ""
+    "breadtext": "Uranus kan lige netop ses med det blotte øje, hvis man ved nøjagtigt hvor på himlen, man skal kigge. Alligevel blev den først opdaget i 1781, og den blev først kaldt Georgs Stjerne efter den engelske konge George III. Den har en smuk blågrøn farve, som skyldes metangas i den øverste del af atmosfæren. Lyset fra Uranus er tilbagekastet lys fra Solen, og når vi ser på planeten, er det lys, som har været 5 timer undervejs; først udad fra Solen, og så tilbage til os. Uranus er en gasplanet uden fast overflade. Den har meget svagere ringe end Saturn, den har mindst 23 måner, og så “ligger” planeten ned: Dens nord- og sydpol peger skiftevis direkte mod Solen, og til andre tider peger polerne på tværs, så der er stor forskel på årstiderne på Uranus. Det ville svare til, at vi her i Danmark havde Solen til at stå lodret over os hele sommeren og ingen nat, og hele vinteren så vi slet intet til Solen."
   },
   "neptun": {
     "name": "Neptun",
@@ -239,6 +239,7 @@
       "På Neptun kan vindene nå helt op på 2.100 kilometer i timen.", 
       "Det er altså virkelig hurtigt, hvis du spørger mig!"
     ],
-    "audio_duration" : 9
+    "audio_duration" : 9,
+    "breadtext": "Neptun er Solsystemets yderste planet. Astronomerne vidste, at den var der før den blev set første gang, fordi dens tyngdekraft forstyrrede banen for Uranus. Så satte man sig til at “regne baglæns” for at finde forstyrreren, og det lykkedes at finde den på himlen i 1846, præcis hvor man havde forudsagt. Neptun er så langt væk fra Solen, at det tager 165 år for den at komme en hel gang rundt. Ligesom de andre gasplaneter, så består Neptun af luftarter, og den har ikke nogen fast overflade. Den blå farve får planeten fra luftarten metan. Vejret på Neptun er vildt, med de stærkeste storme i Solsystemet, og med enorme orkaner ligesom på Jupiter. Der er også ret koldt; 210 graders frost i atmosfæren."
   }
 }

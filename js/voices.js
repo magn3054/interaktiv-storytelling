@@ -61,6 +61,9 @@ function tal() {
 
     // Vælg planetens lydfil baseret på den valgte planet
     switch (selectedPlanet) {
+        case "solen":
+            audio.src = "/audio/solen.mp3";
+            break;
         case "merkur":
             audio.src = "/audio/merkur.mp3";
             break;

@@ -41,7 +41,8 @@
       "Vidste du, at Merkur er den mindste planet i solsystemet og har den svageste tyngdekraft?", 
       "Derfor ville jeg kun veje en tredjedel af min vægt på Jorden."
     ],
-    "audio_duration" : 8
+    "audio_duration" : 8,
+    "breadtext": "Tænk at have fødselsdag fire gange om året! Året på Merkur varer kun 88 dage, fordi planeten er tæt på Solen, så Merkur er også den hurtigste planet. Den kredser om Solen i en meget aflang elipsebane. På den side af Merkur, som vender imod Solen er der mere end 450 grader varmt, og det er så varmt at man sagtens kunne bage en pizza uden ovn, men den lille klippeplanet har ingen atmosfære, så om natten falder temperaturen til 183 graders frost."
   },
   "venus": {
     "name": "Venus",
@@ -67,7 +68,8 @@
       "Venus er den varmeste planet i vores solsystem.", 
       "Vidste du, at en dag her på venus er længere end et år."
     ],
-    "audio_duration" : 7
+    "audio_duration" : 7,
+    "breadtext" : "Tænk sig at have en tvilling. Det har Jorden - næsten, nemlig planeten Venus. De to planeter er næsten lige store, de vejer nogenlunde det samme, og sammensætningen og afstanden fra Solen er også næsten ens. Men så holder lighederne også op. På Venus er der ikke vand. Venus er dækket af et tykt lag hvirvlende skyer, som holder på varmen og skaber en løbsk drivhuseffekt, så på overfladen er der så varmt at bly ville smelte. Lufttrykket svarer til, at man står 900 m under havets overflade her på Jorden. Og når det regner på Venus, så regner det med svovlsyre og saltsyre. Det er ikke lige stedet at holde ferie. Her fra Jorden kan vi se Venus lyse så klart at den ofte kaldes Aftenstjernen eller Morgenstjernen."
   },
   "jorden": {
     "name": "Jorden",
@@ -95,7 +97,8 @@
       "Årsagen til, at vi har forskellige årstider, er, at vores akse hælder en smule til siden.", 
       "Vi er også den eneste planet i universet, hvor mennesker har kendskab til liv."
     ],
-    "audio_duration" : 12
+    "audio_duration" : 12,
+    "breadtext": "Tænk på et rumskib, som suser igennem verdensrummet 40 gange hurtigere end en riffelkugle. Rumskibet har sin egen atmosfære, som holder sig selv i orden. Der er mad, som man selv dyrker, og der er masser af vand og underholdning, og en besætning, som fødes og lever og dør ombord under den lange rejse. Lige præcis sådan er det 'rumskib', som vi er ombord i lige nu; nemlig planeten Jorden. Alt hvad vi behøver for at overleve, findes under det tynde lag luft; atmosfæren, som skiller os fra det fjendtlige, tomme verdensrum. Besætningen er på mere end 7 milliarder mennesker, plus mange flere dyr og planter og enormt mange flere bakterier. Som planet er Jorden bare en lille klippeplanet, 'tredje sten fra Solen', men det er måske det eneste sted, hvor der er liv."
   },
   "mars": {
     "name": "Mars",
@@ -121,7 +124,8 @@
       "Forskere mener, at der engang var vand på Mars,", 
       "hvilket er en grundlæggende forudsætning for at skabe liv."
     ],
-    "audio_duration" : 8
+    "audio_duration" : 8,
+    "breadtext": "Vi kalder Mars 'Den røde Planet' når vi ser den på nattehimlen, og mange af oldtidens folk mente, at planetens røde farve mindede om krig og blod. Mars ER rød, men ikke som blod; mere som rust. Det er fordi klipper og støv på planetens overflade faktisk består af rust. Mars ligner Jorden rigtig meget, selvom den er noget mindre: den har kæmpe vulkaner, kæmpe meteorkratere, støvstorme, iskapper ved polerne og dybe slugter, som er skåret ned i bjergene af rindende vand. Der er også masser af vand på Mars. Det er bare ikke så nemt at få øje på, fordi det meste af det ligger som is lige under overfladen. Klimaet på Mars har ændret sig flere gange hen over millioner og milliarder af år, og engang har der været søer, floder og have og måske liv på planeten, men det er meget, meget længe siden."
   },
   "jupiter": {
     "name": "Jupiter",
@@ -147,7 +151,8 @@
       "Faktisk ville der kunne være omkring trettenhundrede jordkloder inde i Jupiter.", 
       "Mens Jorden kun har én måne, har Jupiter hele ni og halvfjers."
     ],
-    "audio_duration" : 12
+    "audio_duration" : 12,
+    "breadtext": "Jupiter er et 'mini-solsystem' med utallige måner og med ringe om planeten. Ligesom de andre tre ydre planeter Saturn, Uranus og Neptun, så består Jupiter af luftarter helt ind til midten. Vi kalder dem for gasplaneter. Sammensætningen af luftarterne er den samme som Solens, så hvis Jupiter havde været meget større, ville den have været en stjerne i stedet for en planet. I planetens atmosfære kan man se mørke og lyse striber, også i en lille kikkert: Det er skyer, som hvirvler rundt og danner enorme orkaner, som kan være flere gange større end Jorden. Den største orkanstorm hedder 'Den store røde plet.'"
   },
   "saturn": {
     "name": "Saturn",
@@ -171,7 +176,8 @@
     "short_facts": [
       "Saturn er kendt for sine mange ringe, som primært består af rum-sten og rester af ødelagte måner." 
     ],
-    "audio_duration" : 5
+    "audio_duration" : 5,
+    "breadtext": "Saturn er 'Ringenes Herre' og den er en gasplanet ligesom Jupiter, Uranus og Neptun. De øverste skylag danner striber omkring planeten ligesom på Jupiter. De er bare ikke så tydelige. Tydeligt er til gengæld ringsystemet. De brede ringe består af milliarder af små isklumper, hvor de største er på størrelse med en campingvogn. Klumperne kredser som satelitter i hver deres baner, og striberne i ringene opstår fordi tyngdekraften fra Saturns mange måner påvirker de små isklumper. I 1610 kiggede italieneren Galileo Galilei på Saturn med sin lille astronomiske kikkert og det, han troede var 'ører' på planeten, er i virkeligheden ringene."
   },
   "uranus": {
     "name": "Uranus",
@@ -197,7 +203,8 @@
       "Vi må være landet på Uranus, solsystemets koldeste planet.", 
       "Her kan temperaturen falde til næsten minus 200 grader."  
     ],
-    "audio_duration" : 9
+    "audio_duration" : 9,
+    "breadtext": ""
   },
   "neptun": {
     "name": "Neptun",

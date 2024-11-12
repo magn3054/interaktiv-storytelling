@@ -29,16 +29,6 @@ function info(planet) {
             selectedPlanet = planet;
         });
 
-    // Hent beskrivelsen for planeten fra 'planet_text.json'
-    fetch('./json/planet_text.json')
-        .then(response => response.json())
-        .then(jsonData => {
-    const planetData = jsonData["planet-text"].find(item => item.navn.toLowerCase() === planet.toLowerCase());
-    if (planetData) {
-        displayPlanetText(planetData.beskrivelse);
-    }
-});
-
 }
 
 function displayPlanetInfo(data, planetName) {

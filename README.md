@@ -1,8 +1,8 @@
 <h1 align="center" style="margin-top: 0px;">Interaktiv-storytelling - Kom med Astra i rummet</h1>
 
-<p align="center">Klik på Astra for at komme til hendes hjemmeside <br>
+<h3 align="center">Klik på Astra for at komme til hendes hjemmeside <br>
 <a href="https://storytelling.mdamsgaard.dk/"><img width="200" src="img/waving-gif.gif" alt="Astra's hjemmeside" align="center"></a> <br>
-Siden er tilpasset en skærmstørrelse på <span style="color: #00890e"> 1912 x 920 </span></p>
+Siden er tilpasset en skærmstørrelse på <span style="color: #00890e"> 1912 x 920 </span></h3>
 
 ## Sådan har vi brugt JSON
 

@@ -53,19 +53,15 @@ function displayPlanetInfo(data, planetName) {
     facta.innerHTML = `
     <ul>
     <li>Diameter: ${data.diameter}</li>
-    <li>Temperature: ${data.temperature}</li>
-    <li>Gravity: ${data.gravity}</li>
-    <li>Mass: ${data.mass}</li>
-    <li>Distance from Earth: ${data.distance_from_earth}</li>
-    <li>Color: ${data.color}</li>
-    <li>Order from Sun: ${data.order_from_sun}</li>
-    <li>Type: ${data.type}</li>
-    <li>Orbital Period: ${data.orbital_period}</li>
-    <li>Day Length: ${data.day_length}</li>
-    <li>Fun Facts:</li>
-    <ul>
-    ${data.fun_facts.map(fact => `<li>${fact}</li>`).join('')}
-    </ul>
+    <li>Temperatur: ${data.temperature}</li>
+    <li>Tyngdekraft: ${data.gravity}</li>
+    <li>Masse: ${data.mass}</li>
+    <li>Distance fra Jorden: ${data.distance_from_earth}</li>
+    <li>Planetens farve: ${data.farve}</li>
+    <li>Nr. ${data.order_from_sun} fra solen</li>
+    <li>Planettype: ${data.type}</li>
+    <li>Kredsløbstid: ${data.orbital_period}</li>
+    <li>Dagslængde: ${data.day_length}</li>
     </ul>
     `;
     

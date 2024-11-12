@@ -29,7 +29,7 @@
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
-    
+
     &:after {
         position: absolute;
         content: "";
@@ -40,7 +40,7 @@
         box-shadow: -20px -20px 50px 2px #000 inset;
         border-radius: 50%;
     }
-    
+
     & .planet-image {
         position: absolute;
         width: 200%;
@@ -49,40 +49,53 @@
         backface-visibility: hidden;
         animation: spin 30s linear alternate infinite;
     }
-    
+
+    #solen {
+        background: url(https://www.solarsystemscope.com/textures/download/2k_sun.jpg);
+        background-size: cover;
+    }
+
     #merkur {
         background: url(https://www.solarsystemscope.com/textures/download/2k_mercury.jpg);
         background-size: cover;
     }
+
     #venus {
         background: url(https://www.solarsystemscope.com/textures/download/2k_venus_surface.jpg);
         background-size: cover;
     }
+
     #jorden {
         background: url(/img/earth_map.png);
         background-size: cover;
     }
+
     #clouds {
         background: url(/img/earth_clouds.png);
         background-size: cover;
         animation: spin 60s linear alternate-reverse infinite;
     }
+
     #mars {
         background: url(https://www.solarsystemscope.com/textures/download/2k_mars.jpg);
         background-size: cover;
     }
+
     #jupiter {
         background: url(https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg);
         background-size: cover;
     }
+
     #saturn {
         background: url(https://www.solarsystemscope.com/textures/download/2k_saturn.jpg);
         background-size: cover;
     }
+
     #uranus {
         background: url(https://www.solarsystemscope.com/textures/download/2k_uranus.jpg);
         background-size: cover;
     }
+
     #neptun {
         background: url(https://www.solarsystemscope.com/textures/download/2k_neptune.jpg);
         background-size: cover;
@@ -119,6 +132,7 @@
     backdrop-filter: blur(4px) saturate(200%);
     background-color: #ff00b30f;
     border: 1px solid #ff00b32e;
+    color: #ebebeb;
 }
 
 .planet-facts-box {
@@ -148,23 +162,21 @@
 .speech-bubble {
     display: none;
     grid-area: 1 / 4 / 3 / 5;
-	position: relative;
+    position: relative;
     min-width: 15rem;
-	width: fit-content;
+    width: fit-content;
     max-width: 85%;
     min-height: 7rem;
     height: fit-content;
     max-height: 16rem;
     justify-self: end;
     align-self: center;
-	background-color: #fff;
-	border: 8px solid #000;
-	border-radius: 100px 100px 0px 100px;
+    background-color: #fff;
+    border: 8px solid #000;
+    border-radius: 100px 100px 0px 100px;
     align-items: center;
     justify-content: center;
-    
 
-    
     &:before,
     &:after {
         content: ' ';
@@ -172,7 +184,7 @@
         width: 0;
         height: 0;
     }
-    
+
     &:before {
         right: -50px;
         bottom: -8px;
@@ -180,7 +192,7 @@
         border-color: #000 transparent transparent #000;
         border-color: transparent transparent #000 #000;
     }
-    
+
     &:after {
         right: -30px;
         bottom: 0px;
@@ -188,7 +200,7 @@
         border-color: black transparent transparent black;
         border-color: transparent transparent white white;
     }
-    
+
     & #speech {
         width: 100%;
         height: 100%;
@@ -201,7 +213,6 @@
         text-align: center;
         text-wrap: wrap;
         font-size: 100%;
-    
     }
 }
 
@@ -214,14 +225,16 @@
 }
 
 .btn {
-display: inline-block;
-padding: 4px 10px;
-border: 2px solid red;
-border-radius: 5px;
-background-color: red;
-color: #fff;
-text-decoration: none;
-font-size: 1.2rem;
-font-weight: 400;
-transition: all 0.2s ease-in-out;
+    grid-area: 1 / 5 / 4 / 5;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    padding: 4px 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    animation: planet-hover 6s infinite ease-in-out;
 }

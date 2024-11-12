@@ -74,6 +74,10 @@ main {
     animation: spin 30s linear alternate infinite;
 }
 
+#solen {
+    background: url(https://www.solarsystemscope.com/textures/download/2k_sun.jpg);
+    background-size: cover;
+}
 #mercury {
     background: url(https://www.solarsystemscope.com/textures/download/2k_mercury.jpg);
     background-size: cover;

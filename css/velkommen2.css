@@ -40,7 +40,7 @@
     position: absolute;
     height: auto;
     width: auto;
-    right: 10%;
+    right: 8%;
     bottom: 31%;
     width: 245px;
     height: 120px; 
@@ -51,8 +51,10 @@
 #spaceship {
     display: flex;
     position: absolute;
-    left: 7%;
-    top: 14%;
+    left: 6%;
+    top: 18%;
+    height: 400px;
+    width: auto;
 }
 
 video {
@@ -69,12 +71,12 @@ video {
 /* Define the animation */
 @keyframes takeoff {
     0% {
-        top: 14%;
-        left: 7%;
+        left: 6%;
+        top: 18%;
     }
     50% {
-        top: 5%;
-        left: 7%;
+        left: 6%;
+        top: 10%;
     }
     100% {
         transform: rotate(45deg);

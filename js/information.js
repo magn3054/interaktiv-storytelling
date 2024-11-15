@@ -103,4 +103,5 @@ function crossAway() {
     audio.pause();
     audio.currentTime = 0;
     mund.src = "/img/talking-still.png";
+    checkAllClicked();
 }

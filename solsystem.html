@@ -13,6 +13,7 @@
     <script defer src="js/preloader.js"></script>
     <script defer src="js/information.js"></script>
     <script defer src="js/voices.js"></script>
+    <script defer src="js/klikkede.js"></script>
 </head>
 
 <body>
@@ -66,9 +67,13 @@
                     
                 </article>
             </section>
-            <img id="info-astra" src="img/talking-still.png" onclick="tal()" alt="Astra, som venter på at tale">
-            <button class="btn">TRYK PÅ MIG</button>
+            <div id="info-astra">
+                <img id="info-astra-img" src="img/talking-still.png" onclick="tal()" alt="Astra, som venter på at tale">
+                <button class="btn">TRYK PÅ MIG</button>
+            </div>
         </section>
+        <div id="modal">GODT GÅET!<BR>DU HAR BESØGT ALLE PLANETER
+        <button id="hjem-knap"><a href="https://storytelling.mdamsgaard.dk/">Tag hjem igen</a></button><div>
     </main>
 </body>
 

@@ -132,3 +132,41 @@ main {
         transform: scale(1.055);
     }
 }
+
+
+#modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 90000;
+    width: 50%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    background-color: #C38129;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    border-radius: 2rem;
+    font-size: 40px;
+    font-family: "futura";
+    box-shadow: 0 0 10px 2px #48abe0, 0 0 15px 4px #c6ebff, 0 0 25px 6px #ffffff, inset 0 0 10px 2px #48abe0, inset 0 0 15px 4px #c6ebff, inset 0 0 25px 6px #ffffff;
+}
+
+#hjem-knap {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background-color: #283877;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px 2px #00456a, 0 0 15px 4px #c6ebff, 0 0 25px 6px #ffffff;
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}

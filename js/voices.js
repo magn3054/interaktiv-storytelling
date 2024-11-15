@@ -3,7 +3,7 @@
 
 let selectedPlanet = ""; // Fungerer som en global placeholder for den valgte planet fordi koden afhænger af 'information.js'
 const audio = new Audio();
-const mund = document.getElementById("info-astra");
+const mund = document.getElementById("info-astra-img");
 
 function tal() {
     fetch('./json/planet_facts.json')

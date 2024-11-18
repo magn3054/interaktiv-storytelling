@@ -12,7 +12,6 @@ function tal() {
 
             let undertekster = jsonData[selectedPlanet].short_facts;
             let audioDuration = jsonData[selectedPlanet].audio_duration;
-
             const taleBoble = document.getElementById("speech");
             const speechBubble = document.querySelector(".speech-bubble");
             const speechButton = document.querySelector(".btn");
@@ -23,14 +22,11 @@ function tal() {
 
                     mund.src = "/img/talking-gif.gif"; // Skifter til gif af Astra der taler
                     speechButton.style.display = "none" 
-
-                    // Vis den passende fakta fra rækken
-                    taleBoble.innerHTML = `<p>${undertekster[index]}</p>`;
+                    taleBoble.innerHTML = `<p>${undertekster[index]}</p>`; // Vis den passende fakta fra rækken
 
                     const wordCount = undertekster[index].split(" ").length;
                     const displayTimePerWord = 350; // 350 ms pr. ord
                     const totalDisplayTime = audioDuration * 1000;
-
                     // Beregner tiden for den nuværende fakta ud fra antal ord og overordnet tid på lydfilen
                     const timeForCurrentFact = (wordCount * displayTimePerWord / totalDisplayTime) * totalDisplayTime;
 
@@ -56,7 +52,6 @@ function tal() {
         });
 
     const taleBoble = document.querySelector(".speech-bubble");
-
     taleBoble.style.display = "flex";
 
     // Vælg planetens lydfil baseret på den valgte planet
